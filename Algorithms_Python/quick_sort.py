@@ -1,13 +1,14 @@
 
 def quick_sort(the_list):
-	if len(the_list) == 1:
+	if len(the_list) < 2:
 		return the_list
 
-	for i in len(the_list):
-		if the_list[i] < the_list[0]:
-			a_list.append(the_list[i])
-		if the_list[i] > the_list[0]:
-			b_list.append(the_list[i])
+	else:
+		mid_value = the_list[0]
+		less = [item for item in the_list[1:] if item < mid_value]
+		great = [item for item in the_list[1:] if item >= mid_value]
+		return quick_sort(less) + [mid_value] + quick_sort(great)
 
-	return quick_sort(a_list)+the_list[0]+quick_sort(b_list)
-	
+
+
+print (quick_sort([34,1,65,77,1,3,54,8,0,3,45,8,99,22]))
