@@ -1,0 +1,23 @@
+body {
+	background-color: #fff;
+	color: #000;
+}
+h1 {
+	margin-bottom: .2em;
+	color: #fee;
+}
+
+.myPanel {
+	margin:3%;
+	border: 1px solid #687d6d;
+	border-radius: 5px;
+}
+
+.myPanel .heading{
+	background:#a0d3db;
+	border-radius: 5px 5px 0 0;
+	padding:10px 20px;
+}
+.myPanel .panel-body{
+	padding: 10px 20px;
+}
